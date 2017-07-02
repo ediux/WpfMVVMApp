@@ -93,5 +93,19 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WpfMVVMApp.Controllers\WpfMVVMApp.Controllers.csproj">
+      <Project>{f9ab9f17-656a-4221-85a3-27c78367ccfb}</Project>
+      <Name>WpfMVVMApp.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfMVVMApp.Entity\WpfMVVMApp.Entity.csproj">
+      <Project>{9095c46f-a02d-4068-b895-321c99d4134e}</Project>
+      <Name>WpfMVVMApp.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfMVVMApp.ViewModel\WpfMVVMApp.ViewModel.csproj">
+      <Project>{f1a64956-1fe8-439f-a869-edb4b800109e}</Project>
+      <Name>WpfMVVMApp.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

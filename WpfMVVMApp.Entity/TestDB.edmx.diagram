@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d1ecb82c588245b99251c503d60080ce" Name="Diagram1">
+        <EntityTypeShape EntityType="Tokiku2_NewModel.AccessLog" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.BOM" Width="1.5" PointX="5.25" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ConstructionAtlas" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Contacts" Width="1.5" PointX="1.5" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Engineering" Width="1.5" PointX="9" PointY="39.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.FormDetails" Width="1.5" PointX="8.25" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Forms" Width="1.5" PointX="6" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Manufacturers" Width="1.5" PointX="0.75" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ManufacturersBussinessItems" Width="1.5" PointX="5.25" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.MaterialCategories" Width="1.5" PointX="3" PointY="33.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.MaterialEstimation" Width="1.5" PointX="13.5" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Materials" Width="1.5" PointX="5.25" PointY="34.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Membership" Width="1.5" PointX="5.25" PointY="37.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Molds" Width="1.5" PointX="7.5" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.MoldsInProjects" Width="1.5" PointX="9.75" PointY="35.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.MoldUseStatus" Width="1.5" PointX="5.25" PointY="46.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.PaymentTypes" Width="1.5" PointX="1.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ProcessingAtlas" Width="1.5" PointX="7.5" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Profile" Width="1.5" PointX="5.25" PointY="43.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ProjectContract" Width="1.5" PointX="5.25" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ProjectItemCost" Width="1.5" PointX="11.25" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Projects" Width="1.5" PointX="3" PointY="12.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.PromissoryNoteManagement" Width="1.5" PointX="10.5" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.PurchasingOrder" Width="1.5" PointX="10.5" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Roles" Width="1.5" PointX="0.75" PointY="26" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ShopFlow" Width="1.5" PointX="3" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ShopFlowDetail" Width="1.5" PointX="5.25" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.ShopFlowHistory" Width="1.5" PointX="8.25" PointY="19.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.States" Width="1.5" PointX="0.75" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.SupplierTranscationItem" Width="1.5" PointX="10.5" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.TicketPeriod" Width="1.5" PointX="1.5" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.TicketTypes" Width="1.5" PointX="8.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.TranscationCategories" Width="1.5" PointX="3" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.Users" Width="1.5" PointX="3" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Tokiku2_NewModel.WorkShops" Width="1.5" PointX="3" PointY="39.5" IsExpanded="true" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_BOM_MaterialCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_BOM_ProcessingAtlas" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_BOM_ShopFlow" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_BOM_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ConstructionAtlas_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Engineering_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectItemCost_Engineering" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_FormDetails_Forms" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_FormDetails_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_FormDetails_Users_CreateUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_FormDetails_Users_MakingUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_MaterialEstimation_FormDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PurchasingOrder_FormDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Manufacturers_PaymentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Manufacturers_TicketPeriod" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ManufacturersBussinessItems_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Molds_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectItemCost_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_WorkShops_Manufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ManufacturersBussinessItems_MaterialCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ManufacturersBussinessItems_PaymentTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ManufacturersBussinessItems_TicketPeriod" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ManufacturersBussinessItems_TranscationCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_SupplierTranscationItem_ManufacturersBussinessItems" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_MoldsInProjects_MaterialCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectItemCost_MaterialCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_MaterialEstimation_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Materials_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Molds_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PurchasingOrder_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK__aspnet_Me__UserI__164452B1" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Molds_MoldUseStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Molds_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_MoldsInProjects_Molds" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_MoldsInProjects_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProcessingAtlas_ProjectContract" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK__aspnet_Pr__UserI__1FCDBCEB" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectContract_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectContract_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PromissoryNoteManagement_ProjectContract" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ProjectItemCost_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_Projects_States" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_SupplierTranscationItem_Projects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PromissoryNoteManagement_TicketTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PromissoryNoteManagement_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_PurchasingOrder_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowDetail_ShopFlow" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowDetail_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowDetail_WorkShops" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowHistory_ShopFlowHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowHistory_States" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.FK_ShopFlowHistory_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.ClientsInProjects" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.ContractsInManufacturers" ManuallyRouted="false" />
+        <AssociationConnector Association="Tokiku2_NewModel.UsersInRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
