@@ -16,18 +16,13 @@ using System.Windows.Shapes;
 namespace WpfMVVMApp
 {
     /// <summary>
-    /// MainWindow.xaml 的互動邏輯
+    /// TestView.xaml 的互動邏輯
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TestView : UserControl
     {
-        public MainWindow()
+        public TestView()
         {
             InitializeComponent();
-        }
-
-        private void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-
         }
     }
 }

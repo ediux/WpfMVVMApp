@@ -5,13 +5,21 @@ using WpfMVVMApp.Entity;
 
 namespace WpfMVVMApp.Controllers
 {
-    public interface IBaseController<TPOCO> where TPOCO : class
+    public interface IBaseController : IDisposable
     {
-        bool IsExists(Expression<Func<TPOCO, bool>> filiter);
-        ExecuteResultEntity Add(TPOCO entity, bool isLastRecord = true);
-        ExecuteResultEntity<ICollection<TPOCO>> Query(Expression<Func<TPOCO, bool>> filiter);
-        ExecuteResultEntity<TPOCO> Update(TPOCO fromModel, bool isLastRecord = true);
-        ExecuteResultEntity Delete(Expression<Func<TPOCO, bool>> condtion);
-        ExecuteResultEntity<TPOCO> CreateOrUpdate(TPOCO entity);
+        ExecuteResultEntity<Users> GetCurrentLoginUser();
+        ExecuteResultEntity<Users> GetUser(string UserName);
+        ExecuteResultEntity<Users> Login(string UserName, string pwd);
+    }
+
+    public interface IBaseController<T> : IBaseController where T : class
+    {
+        bool IsExists(Expression<Func<T, bool>> filiter);
+        ExecuteResultEntity<T> CreateNew();
+        ExecuteResultEntity Add(T entity, bool isLastRecord = true);
+        ExecuteResultEntity<ICollection<T>> Query(Expression<Func<T, bool>> filiter);
+        ExecuteResultEntity<T> Update(T fromModel, bool isLastRecord = true);
+        ExecuteResultEntity<T> Delete(T entity, bool isDeleteRightNow = false);
+        ExecuteResultEntity<T> CreateOrUpdate(T entity,bool isLastRecord = true);
     }
 }

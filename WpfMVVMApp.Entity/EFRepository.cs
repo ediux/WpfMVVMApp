@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -109,6 +111,24 @@ namespace WpfMVVMApp.Entity
             // TODO: 如果上方的完成項已被覆寫，即取消下行的註解狀態。
             // GC.SuppressFinalize(this);
         }
+
+        public object[] IdentifyPrimaryKey(T entity)
+        {
+            ObjectContext objectContext = ((IObjectContextAdapter)UnitOfWork.Context).ObjectContext;
+            ObjectSet<T> set = objectContext.CreateObjectSet<T>();
+            IEnumerable<string> keyNames = set.EntitySet.ElementType
+                                                        .KeyMembers
+                                                        .Select(k => k.Name);
+
+            Type entityreflection = typeof(T);
+
+            var pkeys = entityreflection.GetProperties()
+                .Join(keyNames, (x) => x.Name, (y) => y, (k, t) => k)
+                .Select(s => s.GetValue(entity));
+
+            return pkeys.ToArray();
+            
+        }
         #endregion
-	}
+    }
 }

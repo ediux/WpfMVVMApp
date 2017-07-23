@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace WpfMVVMApp
 {
     /// <summary>
-    /// MainWindow.xaml 的互動邏輯
+    /// RoutingTest.xaml 的互動邏輯
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class RoutingTest : Window
     {
-        public MainWindow()
+        public RoutingTest()
         {
             InitializeComponent();
-        }
-
-        private void Button_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-
         }
     }
 }

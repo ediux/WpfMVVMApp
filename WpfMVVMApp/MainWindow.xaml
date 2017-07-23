@@ -4,9 +4,22 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfMVVMApp"
+        xmlns:l="clr-namespace:WpfMVVMApp"
+        xmlns:vm="clr-namespace:WpfMVVMApp.ViewModel;assembly=WpfMVVMApp.ViewModel"
+        xmlns:system="clr-namespace:System;assembly=mscorlib" x:Name="window1"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <vm:RedirectCommand  x:Key="replycmd"/>
+    </Window.Resources>
     <Grid>
-        
+        <local:TestView HorizontalAlignment="Left" Height="302" Margin="10,10,0,0" VerticalAlignment="Top" Width="419"   />
+        <Button Height="27" Name="btnTest" Content="test"   Margin="444,73,21,222.5" vm:CommandRoutingManager.Command="{StaticResource replycmd}" >
+            <vm:CommandRoutingManager.CommandParameter>
+                <vm:RoutedViewResult ViewType="{x:Type local:RoutingTest}" SourceInstance="{x:Reference Name=window1}" />
+
+
+            </vm:CommandRoutingManager.CommandParameter>
+        </Button>
     </Grid>
 </Window>
